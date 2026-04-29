@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
+    <title>Attendance Checker</title>
+</head>
+<body>
+    <div id="teams">
+        <h1>Attendance Checker</h1>
+    <br/>
+            <form>
+                <label for="day">Select day</label>
+                <br>
+                <select name="day" id="day">
+                    <option value="7">Monday</option>
+                    <option value="7">Tuesday</option>
+                    <option value="8">Wednesday</option>
+                    <option value="9">Thursday</option>
+                    <option value="10">Friday</option>
+                </select>
+                <br>
+                <br>
+                <label for="day">Absences</label><br>
+                <input type="number" id="absence"><br>
+                </select>
+        </br>
+                <input type="button" class="btn" id="btn" py-click="display" value="Check">
+        </br>
+        </br>
+                <div id="result"></div>
+            </form>
+    </div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
